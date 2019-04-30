@@ -14,28 +14,31 @@ import UIKit
 
 protocol HomeBusinessLogic
 {
-  func doSomething(request: Home.Something.Request)
+    func getTableDataInterector()
 }
 
 protocol HomeDataStore
 {
-  //var name: String { get set }
+  var repositoryDetail: Home.Something.Items? { get }
 }
 
 class HomeInteractor: HomeBusinessLogic, HomeDataStore
 {
+  var repositoryDetail: Home.Something.Items?
   var presenter: HomePresentationLogic?
   var worker: HomeWorker?
-  //var name: String = ""
   
   // MARK: Do something
-  
-  func doSomething(request: Home.Something.Request)
-  {
-    worker = HomeWorker()
-    worker?.doSomeWork()
-    
-    let response = Home.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+    func getTableDataInterector() {
+        worker = HomeWorker()
+        worker?.getTableData(responseRequest: { (response) in
+            if let items = response.items {
+//                self.repositoryDetail = response.items
+//                print(items)
+                self.presenter?.displayTableData(response: items)
+            }
+        }, failed: { (err) in
+            print(err)
+        })
+    }
 }

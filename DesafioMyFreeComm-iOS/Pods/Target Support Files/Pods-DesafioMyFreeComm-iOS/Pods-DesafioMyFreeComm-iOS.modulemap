@@ -1,0 +1,6 @@
+framework module Pods_DesafioMyFreeComm_iOS {
+  umbrella header "Pods-DesafioMyFreeComm-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

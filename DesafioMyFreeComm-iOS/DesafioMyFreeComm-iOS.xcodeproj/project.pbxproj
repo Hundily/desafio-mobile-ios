@@ -7,21 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D46D7382277392400D762C6 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46D7322277392400D762C6 /* DetailPresenter.swift */; };
+		7D46D7392277392400D762C6 /* DetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46D7332277392400D762C6 /* DetailWorker.swift */; };
+		7D46D73A2277392400D762C6 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46D7342277392400D762C6 /* DetailRouter.swift */; };
+		7D46D73B2277392400D762C6 /* DetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46D7352277392400D762C6 /* DetailModels.swift */; };
+		7D46D73C2277392400D762C6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46D7362277392400D762C6 /* DetailViewController.swift */; };
+		7D46D73D2277392400D762C6 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46D7372277392400D762C6 /* DetailInteractor.swift */; };
+		7D46D741227739AB00D762C6 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D46D73F227739AB00D762C6 /* DetailTableViewCell.swift */; };
+		7D46D742227739AB00D762C6 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D46D740227739AB00D762C6 /* DetailTableViewCell.xib */; };
 		7DD4C0822276034700D85C5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C0812276034700D85C5D /* AppDelegate.swift */; };
-		7DD4C0842276034700D85C5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C0832276034700D85C5D /* ViewController.swift */; };
 		7DD4C0872276034700D85C5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD4C0852276034700D85C5D /* Main.storyboard */; };
 		7DD4C0892276034800D85C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD4C0882276034800D85C5D /* Assets.xcassets */; };
 		7DD4C08C2276034800D85C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD4C08A2276034800D85C5D /* LaunchScreen.storyboard */; };
+		7DD4C09A227605BE00D85C5D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C094227605BE00D85C5D /* HomePresenter.swift */; };
+		7DD4C09B227605BE00D85C5D /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C095227605BE00D85C5D /* HomeWorker.swift */; };
+		7DD4C09C227605BE00D85C5D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C096227605BE00D85C5D /* HomeRouter.swift */; };
+		7DD4C09D227605BE00D85C5D /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C097227605BE00D85C5D /* HomeModels.swift */; };
+		7DD4C09E227605BE00D85C5D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C098227605BE00D85C5D /* HomeViewController.swift */; };
+		7DD4C09F227605BE00D85C5D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C099227605BE00D85C5D /* HomeInteractor.swift */; };
+		7DD4C0A522760DF600D85C5D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C0A322760DF500D85C5D /* HomeTableViewCell.swift */; };
+		7DD4C0A622760DF600D85C5D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DD4C0A422760DF500D85C5D /* HomeTableViewCell.xib */; };
+		7DD4C0A82276135400D85C5D /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C0A72276135400D85C5D /* Services.swift */; };
+		7DD4C0AB2276418900D85C5D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD4C0AA2276418900D85C5D /* Extension.swift */; };
+		C2BB07679A35780C2FA51B6C /* Pods_DesafioMyFreeComm_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCD3A4D8315405B17BF21E6 /* Pods_DesafioMyFreeComm_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2736CA3CD3695E56ED49DFA1 /* Pods-DesafioMyFreeComm-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioMyFreeComm-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DesafioMyFreeComm-iOS/Pods-DesafioMyFreeComm-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4BCD3A4D8315405B17BF21E6 /* Pods_DesafioMyFreeComm_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioMyFreeComm_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D46D7322277392400D762C6 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		7D46D7332277392400D762C6 /* DetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorker.swift; sourceTree = "<group>"; };
+		7D46D7342277392400D762C6 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		7D46D7352277392400D762C6 /* DetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModels.swift; sourceTree = "<group>"; };
+		7D46D7362277392400D762C6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7D46D7372277392400D762C6 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		7D46D73F227739AB00D762C6 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTableViewCell.swift; path = ../DetailTableViewCell.swift; sourceTree = "<group>"; };
+		7D46D740227739AB00D762C6 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailTableViewCell.xib; path = ../DetailTableViewCell.xib; sourceTree = "<group>"; };
 		7DD4C07E2276034700D85C5D /* DesafioMyFreeComm-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DesafioMyFreeComm-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD4C0812276034700D85C5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DD4C0832276034700D85C5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7DD4C0862276034700D85C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DD4C0882276034800D85C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD4C08B2276034800D85C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD4C08D2276034800D85C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DD4C094227605BE00D85C5D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		7DD4C095227605BE00D85C5D /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		7DD4C096227605BE00D85C5D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		7DD4C097227605BE00D85C5D /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		7DD4C098227605BE00D85C5D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7DD4C099227605BE00D85C5D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		7DD4C0A322760DF500D85C5D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		7DD4C0A422760DF500D85C5D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		7DD4C0A72276135400D85C5D /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		7DD4C0AA2276418900D85C5D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		8AD5DF78B1AAAD8EE6E00FB2 /* Pods-DesafioMyFreeComm-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioMyFreeComm-iOS.release.xcconfig"; path = "Target Support Files/Pods-DesafioMyFreeComm-iOS/Pods-DesafioMyFreeComm-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +67,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BB07679A35780C2FA51B6C /* Pods_DesafioMyFreeComm_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427D51BD12C1DB9219192F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BCD3A4D8315405B17BF21E6 /* Pods_DesafioMyFreeComm_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D46D744227739B800D762C6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				7D46D73F227739AB00D762C6 /* DetailTableViewCell.swift */,
+				7D46D740227739AB00D762C6 /* DetailTableViewCell.xib */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		7DD4C0752276034700D85C5D = {
 			isa = PBXGroup;
 			children = (
 				7DD4C0802276034700D85C5D /* DesafioMyFreeComm-iOS */,
 				7DD4C07F2276034700D85C5D /* Products */,
+				BE5F90B1C5B5A07FA9B149B2 /* Pods */,
+				427D51BD12C1DB9219192F24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +113,86 @@
 			isa = PBXGroup;
 			children = (
 				7DD4C0812276034700D85C5D /* AppDelegate.swift */,
-				7DD4C0832276034700D85C5D /* ViewController.swift */,
-				7DD4C0852276034700D85C5D /* Main.storyboard */,
+				7DD4C0A0227605DF00D85C5D /* Scenes */,
+				7DD4C0A12276069000D85C5D /* Services */,
+				7DD4C0A92276417A00D85C5D /* Extension */,
 				7DD4C0882276034800D85C5D /* Assets.xcassets */,
 				7DD4C08A2276034800D85C5D /* LaunchScreen.storyboard */,
 				7DD4C08D2276034800D85C5D /* Info.plist */,
 			);
 			path = "DesafioMyFreeComm-iOS";
+			sourceTree = "<group>";
+		};
+		7DD4C093227605A600D85C5D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7DD4C0A222760DDD00D85C5D /* HomeCell */,
+				7DD4C094227605BE00D85C5D /* HomePresenter.swift */,
+				7DD4C095227605BE00D85C5D /* HomeWorker.swift */,
+				7DD4C096227605BE00D85C5D /* HomeRouter.swift */,
+				7DD4C097227605BE00D85C5D /* HomeModels.swift */,
+				7DD4C098227605BE00D85C5D /* HomeViewController.swift */,
+				7DD4C099227605BE00D85C5D /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7DD4C0A0227605DF00D85C5D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7DD4C0852276034700D85C5D /* Main.storyboard */,
+				7DD4C093227605A600D85C5D /* Home */,
+				7DD4C0AC227643CB00D85C5D /* Detail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7DD4C0A12276069000D85C5D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7DD4C0A72276135400D85C5D /* Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7DD4C0A222760DDD00D85C5D /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				7DD4C0A322760DF500D85C5D /* HomeTableViewCell.swift */,
+				7DD4C0A422760DF500D85C5D /* HomeTableViewCell.xib */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		7DD4C0A92276417A00D85C5D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7DD4C0AA2276418900D85C5D /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7DD4C0AC227643CB00D85C5D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7D46D744227739B800D762C6 /* New Group */,
+				7D46D7322277392400D762C6 /* DetailPresenter.swift */,
+				7D46D7332277392400D762C6 /* DetailWorker.swift */,
+				7D46D7342277392400D762C6 /* DetailRouter.swift */,
+				7D46D7352277392400D762C6 /* DetailModels.swift */,
+				7D46D7362277392400D762C6 /* DetailViewController.swift */,
+				7D46D7372277392400D762C6 /* DetailInteractor.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BE5F90B1C5B5A07FA9B149B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2736CA3CD3695E56ED49DFA1 /* Pods-DesafioMyFreeComm-iOS.debug.xcconfig */,
+				8AD5DF78B1AAAD8EE6E00FB2 /* Pods-DesafioMyFreeComm-iOS.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DD4C0902276034800D85C5D /* Build configuration list for PBXNativeTarget "DesafioMyFreeComm-iOS" */;
 			buildPhases = (
+				4E92A7CD3A135016BAC3689F /* [CP] Check Pods Manifest.lock */,
 				7DD4C07A2276034700D85C5D /* Sources */,
 				7DD4C07B2276034700D85C5D /* Frameworks */,
 				7DD4C07C2276034700D85C5D /* Resources */,
+				D8BF2759EA1E2AB8F7D1FE56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,20 +256,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DD4C08C2276034800D85C5D /* LaunchScreen.storyboard in Resources */,
+				7D46D742227739AB00D762C6 /* DetailTableViewCell.xib in Resources */,
 				7DD4C0892276034800D85C5D /* Assets.xcassets in Resources */,
+				7DD4C0A622760DF600D85C5D /* HomeTableViewCell.xib in Resources */,
 				7DD4C0872276034700D85C5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E92A7CD3A135016BAC3689F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioMyFreeComm-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8BF2759EA1E2AB8F7D1FE56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioMyFreeComm-iOS/Pods-DesafioMyFreeComm-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioMyFreeComm-iOS/Pods-DesafioMyFreeComm-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7DD4C07A2276034700D85C5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DD4C0842276034700D85C5D /* ViewController.swift in Sources */,
 				7DD4C0822276034700D85C5D /* AppDelegate.swift in Sources */,
+				7D46D741227739AB00D762C6 /* DetailTableViewCell.swift in Sources */,
+				7DD4C09D227605BE00D85C5D /* HomeModels.swift in Sources */,
+				7D46D73B2277392400D762C6 /* DetailModels.swift in Sources */,
+				7DD4C09C227605BE00D85C5D /* HomeRouter.swift in Sources */,
+				7D46D73A2277392400D762C6 /* DetailRouter.swift in Sources */,
+				7DD4C09B227605BE00D85C5D /* HomeWorker.swift in Sources */,
+				7D46D7382277392400D762C6 /* DetailPresenter.swift in Sources */,
+				7DD4C09A227605BE00D85C5D /* HomePresenter.swift in Sources */,
+				7DD4C0AB2276418900D85C5D /* Extension.swift in Sources */,
+				7DD4C09E227605BE00D85C5D /* HomeViewController.swift in Sources */,
+				7DD4C0A522760DF600D85C5D /* HomeTableViewCell.swift in Sources */,
+				7DD4C0A82276135400D85C5D /* Services.swift in Sources */,
+				7D46D73C2277392400D762C6 /* DetailViewController.swift in Sources */,
+				7D46D7392277392400D762C6 /* DetailWorker.swift in Sources */,
+				7DD4C09F227605BE00D85C5D /* HomeInteractor.swift in Sources */,
+				7D46D73D2277392400D762C6 /* DetailInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +483,7 @@
 		};
 		7DD4C0912276034800D85C5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2736CA3CD3695E56ED49DFA1 /* Pods-DesafioMyFreeComm-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +501,7 @@
 		};
 		7DD4C0922276034800D85C5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD5DF78B1AAAD8EE6E00FB2 /* Pods-DesafioMyFreeComm-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

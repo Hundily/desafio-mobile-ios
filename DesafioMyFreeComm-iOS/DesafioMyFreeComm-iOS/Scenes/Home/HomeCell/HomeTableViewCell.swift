@@ -9,16 +9,23 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var labelNewRepository: UILabel!
+    @IBOutlet weak var labelRepositoryDiscription: UILabel!
+    @IBOutlet weak var labelNumberForks: UILabel!
+    @IBOutlet weak var labelNumberStart: UILabel!
+    @IBOutlet weak var imageAvatar: UIImageView!
+    @IBOutlet weak var labelNameUser: UILabel!
+    @IBOutlet weak var labelUserNameAndLastName: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        imageAvatar.layer.cornerRadius = 40
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

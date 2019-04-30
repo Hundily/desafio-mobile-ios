@@ -11,14 +11,17 @@
 //
 
 import UIKit
+import SDWebImage
 
 protocol HomeDisplayLogic: class
 {
-  func displaySomething(viewModel: Home.Something.ViewModel)
+//  func displaySomething(viewModel: Home.Something.ViewModel)
+    func displayTableData(data: [Home.Something.Items])
 }
 
 class HomeViewController: UIViewController, HomeDisplayLogic
 {
+    
   var interactor: HomeBusinessLogic?
   var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
 
@@ -69,21 +72,74 @@ class HomeViewController: UIViewController, HomeDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
+    
+    showIndicator(withTitle: "Carregando", and: "")
+    tableGit.delegate = self
+    tableGit.dataSource = self
+    
+    setTableView()
+    getTableData()
   }
   
   // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
-  
-  func doSomething()
-  {
-    let request = Home.Something.Request()
-    interactor?.doSomething(request: request)
-  }
-  
-  func displaySomething(viewModel: Home.Something.ViewModel)
-  {
-    //nameTextField.text = viewModel.name
-  }
+    var arrayTableData: [Home.Something.Items] = []
+    @IBOutlet weak var tableGit: UITableView!
+    
+    func getTableData() {
+        interactor?.getTableDataInterector()
+//        hideIndicator()
+    }
+    
+    func setTableView() {
+        tableGit.register(UINib(nibName: "HomeTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "homeCellGit")
+    }
+    
+    func displayTableData(data: [Home.Something.Items]) {
+        hideIndicator()
+        self.arrayTableData = data
+        tableGit.reloadData()
+    }
+}
+
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.arrayTableData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCellGit") as! HomeTableViewCell
+        
+        if let forks_number = arrayTableData[indexPath.row].forks_count,
+            let start_number = arrayTableData[indexPath.row].stargazers_count {
+            cell.labelNumberForks.text = "\(forks_number)"
+            cell.labelNumberStart.text = "\(start_number)"
+        }
+        
+        cell.labelNewRepository.text = arrayTableData[indexPath.row].name
+        cell.labelNameUser.text = arrayTableData[indexPath.row].owner?.login
+        
+        cell.labelUserNameAndLastName.text = arrayTableData[indexPath.row].full_name
+        cell.labelRepositoryDiscription.text = arrayTableData[indexPath.row].description
+        cell.imageAvatar.sd_setImage(with: URL(string: arrayTableData[indexPath.row].owner?.avatar_url ?? ""), placeholderImage: UIImage(named: "placeholder.png"))
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 176
+    }
+    
+    func handleRefresh(_ refreshControl: UIRefreshControl) {
+        refreshControl.endRefreshing()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print(arrayTableData[indexPath.row])
+        self.performSegue(withIdentifier: "segueDetail", sender: arrayTableData[indexPath.row])
+    }
 }

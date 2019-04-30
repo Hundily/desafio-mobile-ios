@@ -11,10 +11,30 @@
 //
 
 import UIKit
+import Alamofire
+
+typealias loginResponseHandler = (_ response: Home.Something.Request) -> ()
 
 class HomeWorker
 {
-  func doSomeWork()
-  {
-  }
+        var url: String = "https://api.github.com/search/repositories?q=language:Java&sort=stars&page=1"
+        
+    func getTableData(responseRequest: @escaping(loginResponseHandler), failed: @escaping(loginResponseHandler)){
+            Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON(completionHandler: {
+                response in
+                do {
+                    if let res = response.data {
+                        let infos = try JSONDecoder().decode(Home.Something.Request.self, from: res)
+                        responseRequest(infos)
+                    }
+                } catch let err {
+                    failed(err as! Home.Something.Request)
+                }
+            })
+    }
+    
+    func doSomeWork() {
+        
+    }
+
 }
